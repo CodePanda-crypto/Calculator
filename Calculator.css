@@ -1,0 +1,208 @@
+/* Modified CSS Reset */
+@import "modern-normalize";
+
+/* Global Styles */
+:root {
+  line-height: 1.5;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Media Defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  max-inline-size: 100%;
+}
+
+/* Form Elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Text Overflow */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/* Reset Margins */
+h1,
+h2,
+h3,
+h4,
+h5,
+figure,
+p,
+ol,
+ul {
+  margin: 0;
+}
+
+ol[role="list"],
+ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
+}
+
+/* Root Stacking Context */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* Body Styling */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: #333;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 80%;
+  height: 80%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #ddd;
+  border: 1px solid #fff;
+  box-shadow: 0 2px 4px rgba(207, 207, 223, 0.5);
+}
+.header {
+  background-color: #808080;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.calculator {
+  border: 2px solid #fff;
+  background-color: #141414;
+  width: 27rem;
+  height: 38rem;
+  padding-left: 5.5px;
+  border-radius: 1.5%;
+  margin: 20px auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 20%, 0.5);
+}
+.result-td {
+  height: 100px;
+}
+.result {
+  background-color: #fff;
+  width: 80%;
+  display: inline;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+}
+
+.calculation-sequence {
+  margin-bottom: none;
+  min-height: 30px; /* Ensure consistent size */
+  padding: 0px;
+  background-color: #f0f0f0;
+  min-height: 2.5rem;
+  min-width: 26rem;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  margin-left: 2px;
+  margin-right: 7px;
+}
+.display {
+  min-height: 30px; /* Ensure consistent size */
+  padding: 0px;
+  background-color: #fff;
+  min-width: 26rem;
+  min-height: 3rem;
+  border-bottom-left-radius: 2%;
+  border-bottom-right-radius: 2%;
+  margin-left: 2px;
+  margin-right: 7px;
+}
+
+button {
+  width: 90%;
+  height: 90%;
+  border: none;
+  border-radius: 5%;
+  background-color: #333;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: lighter;
+  cursor: pointer;
+}
+
+button.operator {
+  background-color: #f2a33c;
+  color: #fff;
+}
+
+button#decimal,
+button#operatorSign,
+button#equals,
+button#clear,
+button#backspace {
+  background-color: #504899;
+  color: #fff;
+}
+
+button#equals {
+  background-color: #4caf50;
+}
+
+/* Active state styles for buttons */
+button:active {
+  background-color: #555;
+}
+button.operator:active {
+  background-color: #e67e73; /* Change to a darker color when clicked */
+}
+#equals:active {
+  background-color: #3e8e41;
+}
+
+button#decimal:active,
+button#operatorSign:active,
+button#clear:active {
+  background-color: #3b3f4e; /* Change to a darker color when clicked
+      */
+}
+#backspace:active {
+  background-color: #3b3f4e;
+}

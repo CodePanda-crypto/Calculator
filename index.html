@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Calculator.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <header class="header">
+        <h1>Calculator</h1>
+      </header>
+      <table class="calculator" id="calculator">
+        <tr>
+          <td colspan="4" class="result-td">
+            <div class="result">
+              <div id="calculation-sequence" class="calculation-sequence"></div>
+              <div id="display" class="display">0</div>
+            </div>
+          </td>
+        </tr>
+        <tr class="first-row">
+          <td><button id="clear">AC</button></td>
+          <td><button id="backspace">⌫</button></td>
+          <td><button id="remainder" class="operator">%</button></td>
+          <td><button id="divide" class="operator">÷</button></td>
+        </tr>
+        <tr class="second-row">
+          <td><button id="7" class="number">7</button></td>
+          <td><button id="8" class="number">8</button></td>
+          <td><button id="9" class="number">9</button></td>
+          <td><button id="multiply" class="operator">×</button></td>
+        </tr>
+        <tr class="third-row">
+          <td><button id="4" class="number">4</button></td>
+          <td><button id="5" class="number">5</button></td>
+          <td><button id="6" class="number">6</button></td>
+          <td><button id="subtract" class="operator">-</button></td>
+        </tr>
+        <tr class="fourth-row">
+          <td><button id="1" class="number">1</button></td>
+          <td><button id="2" class="number">2</button></td>
+          <td><button id="3" class="number">3</button></td>
+          <td><button id="add" class="operator">+</button></td>
+        </tr>
+        <tr class="last-row">
+          <td><button id="0" class="number">0</button></td>
+          <td><button id="decimal">.</button></td>
+          <td><button id="operatorSign">+/-</button></td>
+          <td colspan="2"><button id="equals">=</button></td>
+        </tr>
+      </table>
+    </div>
+    <script src="Calculator.js"></script>
+  </body>
+</html>
